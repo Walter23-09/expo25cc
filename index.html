@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Fortaleza — Guia Turístico</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <!-- HERO -->
+    <header class="hero">
+      <div class="hero-overlay">
+        <h1>🌴 Fortaleza</h1>
+        <p>Descubra os principais pontos turísticos e acompanhe sua localização em tempo real.</p>
+        <button id="btnCenter" class="btn">📍 Minha Localização</button>
+      </div>
+    </header>
+
+    <!-- MAPA -->
+    <main class="map-section">
+      <div class="map-card">
+        <div class="map-header">
+          <h2>Mapa Turístico</h2>
+        </div>
+        <div id="map"></div>
+      </div>
+
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <div class="card">
+          <h3>Minha posição</h3>
+          <div id="positionInfo" class="meta">Aguardando localização...</div>
+        </div>
+
+        <div class="card">
+          <h3>Locais próximos</h3>
+          <div id="nearbyList" class="list"></div>
+        </div>
+      </aside>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>🌎 Fortaleza — guia turístico interativo. Desenvolvido em HTML, CSS e JS. by Walter</p>
+    </footer>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
